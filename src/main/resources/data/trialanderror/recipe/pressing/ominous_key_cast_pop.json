@@ -1,0 +1,16 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "trialanderror:filled_ominous_key_cast"
+    }
+  ],
+  "results": [
+    {
+      "id": "trialanderror:ominous_key_cast"
+    },
+    {
+      "id": "minecraft:ominous_trial_key"
+    }
+  ]
+}

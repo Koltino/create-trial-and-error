@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "lit=false,powered=false": {
+      "model": "trialanderror:block/andesite_bulb"
+    },
+    "lit=false,powered=true": {
+      "model": "trialanderror:block/andesite_bulb"
+    },
+    "lit=true,powered=false": {
+      "model": "trialanderror:block/andesite_bulb_lit_powered"
+    },
+    "lit=true,powered=true": {
+      "model": "trialanderror:block/andesite_bulb_lit_powered"
+    }
+  }
+}

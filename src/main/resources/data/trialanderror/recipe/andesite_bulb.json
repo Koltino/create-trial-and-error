@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "X": {
+      "item": "create:andesite_alloy"
+    },
+    "#": {
+      "item": "create:polished_rose_quartz"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "pattern": [
+    " X ",
+    "X#X",
+    " R "
+  ],
+  "result": {
+    "count": 1,
+    "id": "trialanderror:andesite_bulb"
+  }
+}

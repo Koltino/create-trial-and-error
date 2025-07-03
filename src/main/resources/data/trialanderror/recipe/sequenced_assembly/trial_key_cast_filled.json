@@ -1,0 +1,63 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "trialanderror:trial_key_cast"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "id": "trialanderror:filled_trial_key_cast"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "trialanderror:trial_key_cast"
+        },
+        {
+          "item": "minecraft:tuff"
+        }
+      ],
+      "results": [
+        {
+          "id": "trialanderror:trial_key_cast"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "trialanderror:trial_key_cast"
+        },
+        {
+          "item": "minecraft:copper_ingot"
+        }
+      ],
+      "results": [
+        {
+          "id": "trialanderror:trial_key_cast"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "trialanderror:trial_key_cast"
+        }
+      ],
+      "results": [
+        {
+          "id": "trialanderror:trial_key_cast"
+        }
+      ]
+    }
+  ],
+
+  "transitional_item": {
+    "id": "trialanderror:trial_key_cast"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "package": "com.koltino.trialanderror.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "VaultBlockStateSpoofer",
+    "VaultServerKeyInsertMixin",
+    "VaultServerDataAccessor",
+    "VaultSharedDataAccessor",
+    "VaultBlockEntityServerMixin",
+    "VaultSharedDataMixin"
+  ],
+  "client": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "trialanderror:ominous_key_cast"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "id": "trialanderror:filled_ominous_key_cast"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "trialanderror:ominous_key_cast"
+        },
+        {
+          "item": "minecraft:tuff"
+        }
+      ],
+      "results": [
+        {
+          "id": "trialanderror:ominous_key_cast"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "trialanderror:ominous_key_cast"
+        },
+        {
+          "item": "minecraft:oxidized_copper"
+        }
+      ],
+      "results": [
+        {
+          "id": "trialanderror:ominous_key_cast"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "trialanderror:ominous_key_cast"
+        },
+        {
+          "type": "fluid_stack",
+          "amount": 100,
+          "fluid": "trialanderror:ominous_bile"
+        }
+      ],
+      "results": [
+        {
+          "id": "trialanderror:ominous_key_cast"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "trialanderror:ominous_key_cast"
+        }
+      ],
+      "results": [
+        {
+          "id": "trialanderror:ominous_key_cast"
+        }
+      ]
+    }
+  ],
+
+  "transitional_item": {
+    "id": "trialanderror:ominous_key_cast"
+  }
+}

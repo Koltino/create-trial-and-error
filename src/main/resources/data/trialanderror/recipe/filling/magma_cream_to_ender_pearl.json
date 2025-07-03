@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:magma_cream"
+    },
+    {
+      "type": "fluid_stack",
+      "amount": 100,
+      "fluid": "trialanderror:ominous_bile"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:ender_pearl"
+    }
+  ]
+}

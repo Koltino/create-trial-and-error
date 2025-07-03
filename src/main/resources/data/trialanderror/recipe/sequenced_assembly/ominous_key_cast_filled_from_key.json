@@ -1,0 +1,80 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:ominous_trial_key"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "chance": 12.0,
+      "id": "trialanderror:filled_ominous_key_cast"
+    },
+    {
+      "chance": 10.0,
+      "id": "minecraft:ominous_trial_key"
+    },
+    {
+      "chance": 20.0,
+      "id": "minecraft:oxidized_copper"
+    },
+    {
+      "chance": 58.0,
+      "id": "minecraft:cobblestone"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "trialanderror:incomplete_filled_ominous_key_cast"
+        },
+        {
+          "type": "fluid_stack",
+          "amount": 250,
+          "fluid": "minecraft:lava"
+        }
+      ],
+      "results": [
+        {
+          "id": "trialanderror:incomplete_filled_ominous_key_cast"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "trialanderror:incomplete_filled_ominous_key_cast"
+        },
+        {
+          "type": "fluid_stack",
+          "amount": 250,
+          "fluid": "minecraft:water"
+        }
+      ],
+      "results": [
+        {
+          "id": "trialanderror:incomplete_filled_ominous_key_cast"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "trialanderror:incomplete_filled_ominous_key_cast"
+        }
+      ],
+      "results": [
+        {
+          "id": "trialanderror:incomplete_filled_ominous_key_cast"
+        }
+      ]
+    }
+  ],
+
+  "transitional_item": {
+    "id": "trialanderror:incomplete_filled_ominous_key_cast"
+  }
+}

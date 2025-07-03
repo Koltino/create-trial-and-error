@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:rotten_flesh"
+    },
+    {
+      "type": "fluid_stack",
+      "amount": 5,
+      "fluid": "trialanderror:ominous_bile"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:phantom_membrane"
+    }
+  ]
+}

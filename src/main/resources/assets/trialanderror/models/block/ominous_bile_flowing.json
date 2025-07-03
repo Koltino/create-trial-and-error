@@ -1,0 +1,7 @@
+{
+  "parent": "block/block",
+  "textures": {
+    "particle": "trialanderror:block/ominous_bile_flow",
+    "all": "trialanderror:block/ominous_bile_flow"
+  }
+}

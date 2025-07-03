@@ -1,0 +1,11 @@
+{
+  "variants": {},
+  "multipart": [
+    {
+      "apply": {
+        "model": "trialanderror:block/ominous_bile",
+        "uvlock": true
+      }
+    }
+  ]
+}

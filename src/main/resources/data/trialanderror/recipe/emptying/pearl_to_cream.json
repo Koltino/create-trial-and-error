@@ -1,0 +1,17 @@
+{
+  "type": "create:emptying",
+  "ingredients": [
+    {
+      "item": "minecraft:ender_pearl"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:magma_cream"
+    },
+    {
+      "amount": 75,
+      "id": "trialanderror:ominous_bile"
+    }
+  ]
+}
