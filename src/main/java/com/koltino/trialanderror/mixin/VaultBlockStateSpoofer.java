@@ -60,7 +60,7 @@ public class VaultBlockStateSpoofer {
             CallbackInfoReturnable<ItemInteractionResult> cir
     ) {
         if (stack.is(ModItems.TABULA_RASA.get())) {
-            // Skip the spoofed active state behavior and fallback to default interaction
+            //skips the spoofed active state behavior and fallback to default interaction
             cir.setReturnValue(ItemInteractionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION);
         }
     }
