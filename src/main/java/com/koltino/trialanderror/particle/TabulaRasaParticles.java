@@ -1,9 +1,12 @@
 package com.koltino.trialanderror.particle;
 
+import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.particle.*;
 import net.minecraft.core.particles.SimpleParticleType;
 import org.jetbrains.annotations.Nullable;
+
+import javax.annotation.ParametersAreNonnullByDefault;
 
 public class TabulaRasaParticles extends TextureSheetParticle {
 
@@ -14,7 +17,7 @@ public class TabulaRasaParticles extends TextureSheetParticle {
     protected TabulaRasaParticles(ClientLevel level, double x, double y, double z, SpriteSet spriteset, double xSpeed, double ySpeed, double zSpeed) {
         super(level, x, y, z, xSpeed, ySpeed, zSpeed);
 
-        this.lifetime = 40 + this.random.nextInt(10);
+        this.lifetime = 20 + this.random.nextInt(10);
         this.hasPhysics = false;
         this.setSpriteFromAge(spriteset);
 
@@ -59,12 +62,12 @@ public class TabulaRasaParticles extends TextureSheetParticle {
         this.zd *= v;
 
         if (this.age > this.lifetime * 0.7f) {
-            this.alpha = (float)((this.lifetime - this.age) / (this.lifetime * 0.3f));
+            this.alpha = (this.lifetime - this.age) / (this.lifetime * 0.3f);
         }
 
     }
 
-    @Override
+    @Override @MethodsReturnNonnullByDefault
     public ParticleRenderType getRenderType() {
         return ParticleRenderType.PARTICLE_SHEET_TRANSLUCENT;
     }
@@ -76,7 +79,7 @@ public class TabulaRasaParticles extends TextureSheetParticle {
             this.spriteset = spriteset;
         }
 
-        @Override
+        @Override @ParametersAreNonnullByDefault
         public @Nullable Particle createParticle(SimpleParticleType simpleParticleType, ClientLevel clientLevel, double x, double y, double z, double xv, double yv, double zv) {
             return new TabulaRasaParticles(clientLevel, x, y, z, this.spriteset, xv, yv, zv);
         }
