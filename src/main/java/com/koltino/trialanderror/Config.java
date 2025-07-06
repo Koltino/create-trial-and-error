@@ -14,10 +14,12 @@ import net.neoforged.neoforge.common.ModConfigSpec;
 
 // An example config class. This is not required, but it's a good idea to have one to keep your config organized.
 // Demonstrates how to use Neo's config APIs
-@EventBusSubscriber(modid = TrialAndError.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
+//@EventBusSubscriber(modid = TrialAndError.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
 public class Config
 {
+    /*
     private static final ModConfigSpec.Builder BUILDER = new ModConfigSpec.Builder();
+
 
     private static final ModConfigSpec.BooleanValue LOG_DIRT_BLOCK = BUILDER
             .comment("Whether to log the dirt block on common setup")
@@ -60,4 +62,5 @@ public class Config
                 .map(itemName -> BuiltInRegistries.ITEM.get(ResourceLocation.parse(itemName)))
                 .collect(Collectors.toSet());
     }
+    */
 }

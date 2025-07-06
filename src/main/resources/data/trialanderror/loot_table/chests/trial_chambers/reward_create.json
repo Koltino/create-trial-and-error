@@ -22,7 +22,7 @@
         {
           "type": "minecraft:item",
           "name": "create:andesite_alloy",
-          "weight": 40,
+          "weight": 35,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -52,6 +52,11 @@
         {
           "type": "minecraft:item",
           "name": "trialanderror:trial_key_cast",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "trialanderror:common_tabula_rasa",
           "weight": 5
         }
       ]

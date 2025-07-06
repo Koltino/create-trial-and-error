@@ -6,15 +6,15 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:iron_block",
-          "weight": 40,
+          "name": "minecraft:diamond",
+          "weight": 50,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
-                "min": 3,
-                "max": 5
+                "min": 1,
+                "max": 2
               }
             }
           ]
@@ -22,7 +22,7 @@
         {
           "type": "minecraft:item",
           "name": "create:zinc_block",
-          "weight": 30,
+          "weight": 25,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -37,7 +37,7 @@
         {
           "type": "minecraft:item",
           "name": "create:experience_block",
-          "weight": 15,
+          "weight": 10,
           "functions": [
             {
               "function": "minecraft:set_count",

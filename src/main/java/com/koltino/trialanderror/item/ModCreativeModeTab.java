@@ -24,6 +24,7 @@ public class ModCreativeModeTab {
                         output.accept(ModBlocks.ANDESITE_BULB);
                         output.accept(ModBlocks.ANDESITE_TRAPDOOR);
                         output.accept(ModItems.TABULA_RASA);
+                        output.accept(ModItems.COMMON_TABULA_RASA);
                         output.accept(ModItems.TRIAL_KEY_CAST);
                         output.accept(ModItems.OMINOUS_KEY_CAST);
                         output.accept(ModItems.TRIAL_KEY_CAST_FILLED);

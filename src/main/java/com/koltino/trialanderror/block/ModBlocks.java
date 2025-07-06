@@ -19,16 +19,26 @@ public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(TrialAndError.MOD_ID);
 
     public static final DeferredBlock<Block> BRASS_GRATE = registerBlock("brass_grate",
-            () -> new WaterloggedTransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_GRATE)));
+            () -> new WaterloggedTransparentBlock(BlockBehaviour.Properties
+                    .ofFullCopy(Blocks.COPPER_GRATE)
+                    .mapColor(MapColor.GOLD)));
 
     public static final DeferredBlock<Block> ANDESITE_GRATE = registerBlock("andesite_grate",
-            () -> new WaterloggedTransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_GRATE)));
+            () -> new WaterloggedTransparentBlock(BlockBehaviour.Properties.
+                    ofFullCopy(Blocks.COPPER_GRATE)
+                    .mapColor(MapColor.COLOR_LIGHT_GRAY)));
 
     public static final DeferredBlock<Block> ANDESITE_BULB = registerBlock("andesite_bulb",
-            () -> new CopperBulbBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BULB)));
+            () -> new CopperBulbBlock(BlockBehaviour.Properties
+                    .ofFullCopy(Blocks.COPPER_BULB)
+                    .mapColor(MapColor.COLOR_LIGHT_GRAY)));
 
     public static final DeferredBlock<TrapDoorBlock> ANDESITE_TRAPDOOR = registerBlock("andesite_trapdoor",
-            () -> new TrapDoorBlock(BlockSetType.COPPER, BlockBehaviour.Properties.of().strength(2.5f).requiresCorrectToolForDrops().noOcclusion()));
+            () -> new TrapDoorBlock(BlockSetType.COPPER, BlockBehaviour.Properties.of()
+                    .strength(2.5f)
+                    .requiresCorrectToolForDrops()
+                    .mapColor(MapColor.COLOR_LIGHT_GRAY)
+                    .noOcclusion()));
 
     public static final DeferredBlock<LiquidBlock> OMINOUS_BILE_BLOCK = registerBlock("ominous_bile",
             () -> new LiquidBlock((FlowingFluid) ModFluids.OMINOUS_BILE.get(),

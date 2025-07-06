@@ -5,12 +5,16 @@ import com.koltino.trialanderror.block.ModFluidTypes;
 import com.koltino.trialanderror.block.ModFluids;
 import com.koltino.trialanderror.item.ModCreativeModeTab;
 import com.koltino.trialanderror.item.ModItems;
+import com.koltino.trialanderror.particle.ModParticleTypes;
+import com.koltino.trialanderror.particle.TabulaRasaParticles;
+import com.koltino.trialanderror.sound.ModSounds;
 import com.mojang.blaze3d.shaders.FogShape;
 import net.minecraft.client.Camera;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.FogType;
+import net.neoforged.neoforge.client.event.RegisterParticleProvidersEvent;
 import net.neoforged.neoforge.client.event.ViewportEvent;
 import org.slf4j.Logger;
 
@@ -49,13 +53,17 @@ public class TrialAndError
         ModFluidTypes.register(modEventBus);
         ModFluids.register(modEventBus);
         ModCreativeModeTab.register(modEventBus);
+        ModSounds.register(modEventBus);
+        ModParticleTypes.register(modEventBus);
+
+
 
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
-        modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+        /* modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC); */
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
@@ -82,6 +90,11 @@ public class TrialAndError
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
+        }
+
+        @SubscribeEvent
+        public static void registerParticleFactories(RegisterParticleProvidersEvent event){
+            event.registerSpriteSet(ModParticleTypes.TABULA_RASA_PARTICLES.get(), TabulaRasaParticles.Provider::new);
         }
 
 

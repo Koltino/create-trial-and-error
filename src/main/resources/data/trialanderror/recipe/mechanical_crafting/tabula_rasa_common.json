@@ -1,0 +1,26 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": true,
+  "category": "misc",
+  "key": {
+
+    "L": {
+      "item": "create:cut_limestone"
+    },
+    "D": {
+      "item": "minecraft:copper_block"
+    },
+    "T": {
+      "item": "trialanderror:common_tabula_rasa"
+    }
+  },
+  "pattern": [
+    "LTL",
+    "LDL",
+    "LLL"
+  ],
+  "result": {
+    "count": 2,
+    "id": "trialanderror:common_tabula_rasa"
+  }
+}

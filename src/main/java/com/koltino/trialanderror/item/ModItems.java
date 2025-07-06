@@ -32,7 +32,11 @@ public class ModItems
             () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> TABULA_RASA = ITEMS.register("tabula_rasa",
-            () -> new TabulaRasaItem(new Item.Properties()));
+            () -> new TabulaRasaItem(new Item.Properties(), true));
+
+    public static final DeferredItem<Item> COMMON_TABULA_RASA = ITEMS.register("common_tabula_rasa",
+            () -> new TabulaRasaItem(new Item.Properties(), false));
+
 
     public static final DeferredItem<Item> OMINOUS_BILE_BUCKET =
             ITEMS.register("ominous_bile_bucket",
