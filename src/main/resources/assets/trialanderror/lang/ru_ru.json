@@ -3,8 +3,8 @@
   "item.trialanderror.filled_trial_key_cast": "Заполненная форма для ключа испытаний",
   "item.trialanderror.ominous_key_cast": "Форма для зловещего ключа испытаний",
   "item.trialanderror.filled_ominous_key_cast": "Заполненная форма для зловещего ключа испытаний",
-  "item.trialanderror.incomplete_filled_trial_key_cast": "Незавершённая форма",
-  "item.trialanderror.incomplete_filled_ominous_key_cast": "Незавершённая форма",
+  "item.trialanderror.incomplete_filled_trial_key_cast": "Незавершённая форма для ключа испытаний",
+  "item.trialanderror.incomplete_filled_ominous_key_cast": "Незавершённая форма для зловещего ключа испытаний",
   "item.trialanderror.common_tabula_rasa": "Чистая доска",
   "item.trialanderror.tabula_rasa": "Зловещая чистая доска",
   "item.trialanderror.ominous_bile_bucket": "Ведро зловещей жижи",
@@ -12,7 +12,7 @@
   "tooltip.trialanderror.tabula_rasa_1": "Примените к хранилищу для повторной попытки.",
   "tooltip.trialanderror.tabula_rasa_2": "Работает с автономными активаторами.",
 
-  "tooltip.trialanderror.tabula_rasa_3": "Автономные активаторы наследуют UUID игрока",
+  "tooltip.trialanderror.tabula_rasa_3": "Активаторы наследуют UUID игрока,",
   "tooltip.trialanderror.tabula_rasa_4": "который их разместил, поэтому они разделяют",
   "tooltip.trialanderror.tabula_rasa_5": "состояние попытки хранилища с этим игроком.",
   "tooltip.trialanderror.tabula_rasa_6": "Примените к зловещему хранилищу для повторной попытки.",
@@ -27,5 +27,5 @@
 
   "fluid_type.trialanderror.ominous_bile": "Зловещая жижа",
 
-  "creativetab.trialanderror.tab": "Trial and Error"
+  "creativetab.trialanderror.tab": "Create: Trial and Error"
 }
