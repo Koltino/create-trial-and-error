@@ -1,0 +1,36 @@
+{
+  "elements": [
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "trialanderror:trial_chambers/chamber/entrance_cap",
+        "processors": "minecraft:trial_chambers_copper_bulb_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1,
+      "neoforge:conditions": [
+        {
+          "type": "trialanderror:overwrite_trial_chamber"
+        }
+      ]
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "minecraft:trial_chambers/chamber/entrance_cap",
+        "processors": "minecraft:trial_chambers_copper_bulb_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1,
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:not",
+          "value": {
+            "type": "trialanderror:overwrite_trial_chamber"
+          }
+        }
+      ]
+    }
+  ],
+  "fallback": "minecraft:empty"
+}

@@ -12,8 +12,10 @@ import com.mojang.blaze3d.shaders.FogShape;
 import net.minecraft.client.Camera;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.level.DataPackConfig;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.FogType;
+import net.neoforged.fml.ModLoadingContext;
 import net.neoforged.neoforge.client.event.RegisterParticleProvidersEvent;
 import net.neoforged.neoforge.client.event.ViewportEvent;
 import org.slf4j.Logger;
@@ -48,6 +50,7 @@ public class TrialAndError
         modEventBus.addListener(this::commonSetup);
 
         NeoForge.EVENT_BUS.register(this);
+
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModFluidTypes.register(modEventBus);
@@ -62,8 +65,8 @@ public class TrialAndError
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
-        // Register our mod's ModConfigSpec so that FML can create and load the config file for us
-        /* modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC); */
+        modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
@@ -99,4 +102,6 @@ public class TrialAndError
 
 
     }
+
+
 }

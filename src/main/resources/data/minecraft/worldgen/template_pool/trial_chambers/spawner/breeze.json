@@ -1,0 +1,40 @@
+{
+  "elements": [
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "trialanderror:trial_chambers/spawner/connectors/breeze",
+        "processors": {
+          "processors": []
+        },
+        "projection": "rigid"
+      },
+      "weight": 1,
+      "neoforge:conditions": [
+        {
+          "type": "trialanderror:overwrite_trial_chamber"
+        }
+      ]
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "minecraft:trial_chambers/spawner/connectors/breeze",
+        "processors": {
+          "processors": []
+        },
+        "projection": "rigid"
+      },
+      "weight": 1,
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:not",
+          "value": {
+            "type": "trialanderror:overwrite_trial_chamber"
+          }
+        }
+      ]
+    }
+  ],
+  "fallback": "minecraft:empty"
+}

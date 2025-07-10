@@ -1,4 +1,4 @@
-package com.koltino.trialanderror.datagen;
+package com.koltino.trialanderror.data;
 
 import com.koltino.trialanderror.TrialAndError;
 import net.minecraft.core.HolderLookup;

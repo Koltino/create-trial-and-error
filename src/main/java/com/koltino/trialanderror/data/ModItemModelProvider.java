@@ -1,7 +1,6 @@
-package com.koltino.trialanderror.datagen;
+package com.koltino.trialanderror.data;
 
 import com.koltino.trialanderror.TrialAndError;
-import com.koltino.trialanderror.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
