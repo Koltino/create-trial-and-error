@@ -2,10 +2,10 @@
 {
   "item.trialanderror.trial_key_cast": "Trial Key Cast",
   "item.trialanderror.filled_trial_key_cast": "Filled Trial Key Cast",
-  "item.trialanderror.ominous_key_cast": "Ominous Key Cast",
-  "item.trialanderror.filled_ominous_key_cast": "Filled Ominous Key Cast",
-  "item.trialanderror.incomplete_filled_trial_key_cast": "Incomplete Cast",
-  "item.trialanderror.incomplete_filled_ominous_key_cast": "Incomplete Cast",
+  "item.trialanderror.ominous_key_cast": "Ominous Trial Key Cast",
+  "item.trialanderror.filled_ominous_key_cast": "Filled Ominous Trial Key Cast",
+  "item.trialanderror.incomplete_filled_trial_key_cast": "Incomplete Filled Trial Key Cast",
+  "item.trialanderror.incomplete_filled_ominous_key_cast": "Incomplete Filled Ominous Trial Key Cast",
   "item.trialanderror.common_tabula_rasa": "Blank Slate",
   "item.trialanderror.tabula_rasa": "Ominous Blank Slate",
   "item.trialanderror.ominous_bile_bucket": "Ominous Sludge Bucket",
@@ -31,6 +31,6 @@
   "block.trialanderror.ominous_bile": "Ominous Sludge",
 
 
-  "creativetab.trialanderror.tab": "Trial and Error"
+  "creativetab.trialanderror.tab": "Create: Trial and Error"
 
 }

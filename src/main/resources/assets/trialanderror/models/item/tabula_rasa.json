@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "trialanderror:item/tabula_rasa"
+    "layer0": "trialanderror:item/tuff_tabula_rasa"
   }
 }

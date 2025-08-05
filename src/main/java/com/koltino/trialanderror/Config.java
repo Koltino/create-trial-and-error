@@ -9,6 +9,7 @@ import net.neoforged.neoforge.common.ModConfigSpec;
 // An example config class. This is not required, but it's a good idea to have one to keep your config organized.
 // Demonstrates how to use Neo's config APIs
 //@EventBusSubscriber(modid = TrialAndError.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
+/*
 public class Config
 {
 
@@ -21,7 +22,7 @@ public class Config
 
     static final ModConfigSpec SPEC = BUILDER.build();
 
-    public static boolean paletteSwapTrialChambers;
+    public static boolean PALETTE_SWAP_CHAMBERS;
 
     private static boolean validateItemName(final Object obj)
     {
@@ -31,7 +32,8 @@ public class Config
     @SubscribeEvent
     static void onLoad(final ModConfigEvent event)
     {
-        paletteSwapTrialChambers = PALETTE_SWAP.get();
+        PALETTE_SWAP_CHAMBERS = PALETTE_SWAP.get();
 
     }
 }
+*/

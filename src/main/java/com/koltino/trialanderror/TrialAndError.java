@@ -18,6 +18,7 @@ import net.minecraft.world.level.material.FogType;
 import net.neoforged.fml.ModLoadingContext;
 import net.neoforged.neoforge.client.event.RegisterParticleProvidersEvent;
 import net.neoforged.neoforge.client.event.ViewportEvent;
+import net.neoforged.neoforge.common.data.DatapackBuiltinEntriesProvider;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -51,6 +52,7 @@ public class TrialAndError
 
         NeoForge.EVENT_BUS.register(this);
 
+
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModFluidTypes.register(modEventBus);
@@ -65,7 +67,7 @@ public class TrialAndError
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
-        modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+        //modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
 
     }
 

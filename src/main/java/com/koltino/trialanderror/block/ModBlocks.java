@@ -41,7 +41,7 @@ public class ModBlocks {
                     .noOcclusion()));
 
     public static final DeferredBlock<LiquidBlock> OMINOUS_BILE_BLOCK = registerBlock("ominous_bile",
-            () -> new LiquidBlock((FlowingFluid) ModFluids.OMINOUS_BILE.get(),
+            () -> new OminousBileBlock((FlowingFluid) ModFluids.OMINOUS_BILE.get(),
                     BlockBehaviour.Properties.of()
                             .mapColor(MapColor.COLOR_PURPLE)
                             .noCollission()

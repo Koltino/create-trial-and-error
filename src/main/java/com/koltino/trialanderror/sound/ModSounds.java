@@ -13,7 +13,7 @@ public class ModSounds {
     public static final DeferredRegister<SoundEvent> SOUND_EVENTS =
     DeferredRegister.create(BuiltInRegistries.SOUND_EVENT, TrialAndError.MOD_ID);
 
-    public  static final Supplier<SoundEvent> TABULA_RASA_USE = registerSoundEvent("tabula_rasa_use");
+    public static final Supplier<SoundEvent> TABULA_RASA_USE = registerSoundEvent("tabula_rasa_use");
 
 
     private static Supplier<SoundEvent> registerSoundEvent(String name)
