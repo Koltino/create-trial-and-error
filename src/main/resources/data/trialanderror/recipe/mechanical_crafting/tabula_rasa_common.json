@@ -5,13 +5,13 @@
   "key": {
 
     "L": {
-      "item": "minecraft:polished_tuff"
+      "tag": "trialanderror:used_for_blank_slate"
     },
     "D": {
-      "item": "minecraft:diamond"
+      "item": "minecraft:copper_block"
     },
     "T": {
-      "item": "trialanderror:tabula_rasa"
+      "item": "trialanderror:common_tabula_rasa"
     }
   },
   "pattern": [
@@ -21,6 +21,6 @@
   ],
   "result": {
     "count": 2,
-    "id": "trialanderror:tabula_rasa"
+    "id": "trialanderror:common_tabula_rasa"
   }
 }

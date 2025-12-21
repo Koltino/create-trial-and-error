@@ -1,0 +1,25 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "minecraft:heavy_core"
+    }
+  ],
+  "processing_time": 1000,
+  "results": [
+    {
+      "id": "minecraft:iron_block",
+      "count": 5
+    },
+    {
+      "chance": 0.5,
+      "id": "minecraft:iron_block",
+      "count": 1
+    },
+    {
+      "chance": 0.5,
+      "id": "create:experience_block",
+      "count": 1
+    }
+  ]
+}
